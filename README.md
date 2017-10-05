@@ -1,5 +1,20 @@
 #yiimp - yaamp fork
 
+	apt-get install git
+	apt-get install build-essential libboost-all-dev libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev mysql-server
+	apt-get install memcached php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5
+	apt-get install phpmyadmin
+	
+	apt-get install memcached php5-memcached
+	# nano /etc/memcached.conf
+	Find
+	-m 64
+	Change to
+	-m 512
+	
+	# /etc/init.d/memcached restart
+	# /etc/init.d/apache2 restart
+
 Required:
 
 	linux, mysql, php, memcached, a webserver (lighttpd or nginx recommended)
